@@ -29,7 +29,7 @@ end
 figure('Name','MSE 1','NumberTitle','off')
 plot (MSE);
 
-%% STEP 3 and 4--------------------------------------------
+%% Parte 3 y 4--------------------------------------------
 
 % Se agrega algunos ceros al comienzo de la matriz para que el 
 % tamaño sea divisible por 160 :
@@ -86,11 +86,9 @@ end
 figure('Name','Error 1')
 plot (error);
 
-%STEP 3 and 4--------------------------------------------
 
 
-
-%% STEP 5--------------------------------------------------
+%% Parte 5--------------------------------------------------
 lyn = 0;  % Longitud inicial de la nueva matriz recontruida (ynew)
 for k = 0:ly/160 - 1
     y160 = 0;
@@ -115,10 +113,8 @@ end
 sound(ynew, Fs);
 pause(2.5);
 
-%STEP 5--------------------------------------------------
 
-
-%% STEP 6--------------------------------------------------
+%% PARTE 6--------------------------------------------------
 
 q = (max(error)-min(error))/10;   %L=10
 errorq = round(error/q)*q;
@@ -199,5 +195,3 @@ end
 
 figure('Name','MSEhat 1','NumberTitle','off')
 plot (MSEhat);
-
-%STEP 6--------------------------------------------------
